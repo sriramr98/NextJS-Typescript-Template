@@ -1,66 +1,101 @@
-# TypeScript Next.js example
+# NextJS Typescript Boilerplate
 
-This is a really simple project that show the usage of Next.js with TypeScript.
+This is a simple NextJS Boilerplate I created for my future projects.
+This boilerplate contains
 
-## Deploy your own
+- NextJS
+- ReactJS
+- Typescript
+- Firebase
+- Material UI
 
-Deploy the example using [ZEIT Now](https://zeit.co/now):
+## Getting Started
 
-[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/new/project?template=https://github.com/zeit/next.js/tree/canary/examples/with-typescript)
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-## How to use it?
+### Prerequisites
 
-### Using `create-next-app`
+Make sure you have the following pre requisites before getting started
 
-Execute [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
+- NodeJS (LTS)
+- Firebase Account
+- Knowledge on Redux and Redux Sagas
 
-```bash
-npx create-next-app --example with-typescript with-typescript-app
-# or
-yarn create next-app --example with-typescript with-typescript-app
+### Installing
+
+#### Firebase Setup
+
+- Log on to [firebase](https://console.firebase.google.com)
+- Create a new project
+- Create a new app in the project
+- Add the following env variables to .env file
+
+```
+FIREBASE_API_KEY={apiKey}
+
+FIREBASE_AUTH_DOMAIN={authDomain}
+
+FIREBASE_PROJECT_ID={projectId}
+
+FIREBASE_APP_ID={appId}
 ```
 
-### Download manually
+#### Remove Git Setup (Optional)
 
-Download the example:
+If you want to remove my previous git commits and start with this repo with new commits
 
-```bash
-curl https://codeload.github.com/zeit/next.js/tar.gz/canary | tar -xz --strip=2 next.js-canary/examples/with-typescript
-cd with-typescript
+```
+git remote rm origin
 ```
 
-Install it and run:
+Then add your origin remote and start working
 
-```bash
-npm install
-npm run dev
-# or
+#### Start Dev Server
+
+First, install all the dependencies
+```
+// yarn
 yarn
-yarn dev
+
+// npm
+npm install
 ```
 
-Deploy it to the cloud with [now](https://zeit.co/now) ([download](https://zeit.co/download)):
-
-```bash
-now
-```
-
-## The idea behind the example
-
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
+Start local server
 
 ```
-npm install --save-dev typescript
+// yarn
+yarn run dev
+
+// npm
+npm run dev
 ```
 
-To enable TypeScript's features, we install the type declaratons for React and Node.
+## Built With
 
-```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
+- [NextJS](https://nextjs.org/) - Server Rendered React Apps
+- [ReactJS](https://reactjs.org/) - The frontend web framework used
+- [Firebase](https://console.firebase.google.com) - Authentication
+- [Material UI](https://material-ui.com/) - UI Framework for Material Design
 
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
+## Contributing
 
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) ( In progress ) for details on our code of conduct, and the process for submitting pull requests to us.
 
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/sriramr98/NextJS-Typescript-Template/tags).
+
+## Authors
+
+- **Sriram R** - _Initial work_ - [Github](https://github.com/sriramr98)
+
+See also the list of [contributors](https://github.com/sriramr98/NextJS-Typescript-Template/graphs/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+- Login Modal UI Inspired from [Florin Pop Double Slider Tutorial](https://www.florin-pop.com/blog/2019/03/double-slider-sign-in-up-form/)
