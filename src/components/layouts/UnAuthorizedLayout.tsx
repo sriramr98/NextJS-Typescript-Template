@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import Head from 'next/head';
 import Box from '@material-ui/core/Box';
 
-import Header from './common/Header';
+import Header from 'components/common/Header';
 
 type Props = {
   title?: string;
   children: React.ReactNode;
 };
 
-const Layout: React.FunctionComponent<Props> = ({
+const UnAuthorizedLayout: React.FunctionComponent<Props> = ({
   children,
   title = 'NextJS Boilerplate | Typescript',
 }) => (
@@ -27,9 +27,9 @@ const Layout: React.FunctionComponent<Props> = ({
   </Box>
 );
 
-Layout.propTypes = {
+UnAuthorizedLayout.propTypes = {
   children: PropTypes.element.isRequired,
   title: PropTypes.string,
 };
 
-export default Layout;
+export default UnAuthorizedLayout;

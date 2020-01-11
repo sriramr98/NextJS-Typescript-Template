@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Layout from 'components/Layout';
+import Layout from 'components/layouts/UnAuthorizedLayout';
 import { NextPage } from 'next';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
